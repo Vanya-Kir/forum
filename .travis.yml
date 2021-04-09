@@ -9,7 +9,7 @@ branches:
     - master
 
 script:
-  - pytest
+  - echo "test debila"
 
 notifications:
   email:
