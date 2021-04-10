@@ -9,8 +9,7 @@ branches:
 deploy:
   provider: heroku
   app: chuvsu-forum
-  api_key:
-    secure: "d8bb47c8-aeb7-4db6-944a-ddb17d857e9a"
+  api_key: "d8bb47c8-aeb7-4db6-944a-ddb17d857e9a"
 
 script:
   - echo "test debila"
