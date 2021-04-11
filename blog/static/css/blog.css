@@ -89,3 +89,10 @@ h2 {
 .post_edit textarea {
     width: 90%;
 }
+
+.vk a{
+    color: #000 !important;
+}
+.head_li{
+    list-style: none; 
+}

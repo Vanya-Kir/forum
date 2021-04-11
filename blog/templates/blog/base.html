@@ -10,15 +10,20 @@
     <div class='head'>
         <h1 class='head_left'><a href="/">Форум студентов ЧГУ</a></h1>
         {% if user.is_authenticated %}
-        <div class="head_right login">Привет, {{ user.username }} (<a href="{% url 'logout' %}">Выйти</a>)</div>
+        <div class="head_right login">Привет, {{ user.username }} (<a href="{% url 'account_logout' %}">Выйти</a>)</div>
 
         {% else %}
-        <div class="head_right login"><a href="{% url 'login' %}">Войти</a></div>
+        <ul>
+        <li class='head_li'><div class="head_right login"><a href="{% url 'account_login' %}">Войти</a></div>
+        <li class='head_li'><div class="head_right login"><a href="{% url 'account_signup' %}">Зарегистрироваться</a></div>
+        </ul>
         {% endif %}
     </div>
 
+    {% if user.is_authenticated %}
     <div class="make_post"><a href="{% url 'post_new' %}"><span>&#9998; НАПИСАТЬ ПОСТ</span></a></div>
-    
+    {% endif %}
+
     {% block content %}
     {% endblock %}
 
