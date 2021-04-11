@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #f0f2f1;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.head {
+    margin: 10px 10px 5px 10px;
+    padding: 5px;
+    background-color: #3686e7;
+    color: black;
+    display: flex;
+    /* text-align: center; */
+}
+
+/* .head a{
+    color:whitesmoke;
+} */
+h1 {
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.login {
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.head_left {
+    flex: 1;
+}
+
+.head_right {
+    flex: 1;
+    text-align: right;
+}
+
+.make_post {
+    background-color: #2a3471;
+    margin: 5px 10px;
+    padding: 7px;
+}
+
+.post a {
+    color: #000;
+}
+
+.post {
+    margin: -10px 10px;
+    background-color: rgba(30, 144, 255, 0.3);
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 7px;
+}
+
+h2 {
+    font-size: 27px;
+    padding: 0;
+    padding-top: 5px;
+    margin-block-end: 5px;
+}
+
+.date {
+    color: dimgrey;
+}
+
+.comment_btn {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.comment {
+    margin: 10px;
+    border: 3px solid #3686e7;
+    padding: 5px;
+}
+
+.post_edit {
+    margin: 10px;
+}
+
+.post_edit textarea {
+    width: 90%;
+}
