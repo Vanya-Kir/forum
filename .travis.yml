@@ -10,6 +10,8 @@ deploy:
   provider: heroku
   app: chuvsu-forum
   api_key: "d8bb47c8-aeb7-4db6-944a-ddb17d857e9a"
+  run:
+    - "python manage.py migrate"
 
 script:
   - echo "test debila"
