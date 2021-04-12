@@ -90,9 +90,26 @@ h2 {
     width: 90%;
 }
 
-.vk a{
+.vk a {
     color: #000 !important;
 }
-.head_li{
-    list-style: none; 
+
+.head_li {
+    list-style: none;
+}
+
+@media only screen and (max-width: 710px) {
+    html {
+        font-size: 1.5em !important;
+    }
+
+    .head {
+        display: inline-table;
+        width: 100%;
+        margin: 0;
+    }
+
+    .post {
+        margin: 0 !important;
+    }
 }
